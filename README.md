@@ -1,7 +1,7 @@
 dart-polymer-elements-with-angular
 ==================================
 
-Where i learn about creating custom reusable polymer elements and angular dart...
+Where i learn  creating custom reusable polymer elements and angular dart...
 
 Browser : Chromium
 
