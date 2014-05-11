@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polymer Custom Elements with Angular</title>
+    <link href="packages/polymer/polymer.html" rel="import">
+    <link rel = "import" href = "test_elements/table/table_test.html">
+    <link rel = "import" href = "test_elements/searchbox/search_test.html">
+    <link rel="stylesheet" href="semantic_ui/css/semantic.min.css">
+</head>
+
+<body ng-app>
+<header>
+    <h4 class="ui inverted black block header">
+        <a class="item">Angular Polymer</a>
+    </h4>
+</header>
+<div class="ui two column grid" app-ctrl>
+    <div class="column" style="width: 35%">
+        <div class="ui large vertical menu">
+            <a class="active item" href="#/readme">ReadMe</a>
+            <a class="item" href="#/tabledemo">Table Demo</a>
+            <a class="item" href="#/searchdemo"> Search Box Demo</a>
+        </div>
+    </div>
+
+    <div class="column">
+        <div id="content">
+           <ng-view></ng-view>
+        </div>
+    </div>
+</div>
+
+<!--</div>
+<footer>
+    <div class="ui horizontal icon divider">
+        <i class="circular headphones icon"></i>
+    </div>
+    Built by Polymer Angular Dart.
+</footer>
+</div>-->
+<script type="text/javascript"
+        src="packages/jquery_for_pub/2.1.0/jquery-2.1.0.js"></script>
+<script type="text/javascript"
+        src="semantic_ui/javascript/semantic.min.js"></script>
+<script type="application/dart" src="main.dart"></script>
+<script src="packages/browser/dart.js"></script>
+<!-- dart bootstrap script -->
+</body>
+</html>

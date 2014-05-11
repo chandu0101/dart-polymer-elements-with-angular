@@ -1,0 +1,12 @@
+name: polymerangular
+dependencies:
+  angular: any
+  polymer: any
+  angular: any
+  shadow_dom: any
+  jquery_for_pub: any
+  unittest: any
+  angular_node_bind: any
+
+transformers:
+ - angular

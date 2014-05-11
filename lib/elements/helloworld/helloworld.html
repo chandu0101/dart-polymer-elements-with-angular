@@ -1,0 +1,9 @@
+<polymer-element name = "hello-world" attributes ="message list">
+ <template>
+    {{message}}
+  <template repeat ="{{item in list}}">
+    {{item}}
+  </template>
+ </template>
+<script type="application/dart" src="helloworld.dart"></script>
+</polymer-element>

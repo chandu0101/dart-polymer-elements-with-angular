@@ -1,0 +1,25 @@
+
+<link rel="import" href="../safehtml/safe_html.html">
+
+<polymer-element name = "table-element" attributes ="structure data">
+     <template>
+         <table class="ui table segment" id="table_element">
+             <tr>
+                 <th template repeat="{{col in cols}}">
+                     {{col}}
+                 </th>
+             </tr>
+             <tr template repeat="{{row in data}}">
+                 <td template repeat="{{field in fields}}">
+                     <template if ="{{cellFactories[field] == 'html'}}" >
+                         <safe-html model="{{row[field]}}"></safe-html>  <!-- if text contains html render as html , by default polymer expression doesnt support it -->
+                     </template>
+                     <template if ="{{cellFactories[field] == null}}" >
+                           {{row[field]}}
+                     </template>
+                 </td>
+             </tr>
+         </table>
+     </template>
+<script type="application/dart" src="table_element.dart"></script>
+</polymer-element>

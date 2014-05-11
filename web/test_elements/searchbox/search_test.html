@@ -1,0 +1,11 @@
+<link rel = "import" href="../../../lib/elements/searchbox/serch_box.html">
+
+<polymer-element name = "search-test">
+ <template>
+    <search-box data="{{data}}"></search-box>
+    <template repeat = "{{item in data}}">
+      <li>{{item}}</li> 
+    </template>
+ </template>
+<script type="application/dart" src="search_test.dart"></script>
+</polymer-element>
